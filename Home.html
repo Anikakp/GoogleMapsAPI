@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+ 	<title>Place search</title>
+ 	    <link rel = "stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" href = "./style.css">
+ </head>
+ <body>
+    <div class="view-map-tab">
+    <div id="map" style="position:absolute; top:0; bottom:0; width:70%;height:100%;"></div>
+    <div class="filters" style ="width:30%">
+        
+    	<div class = "search-input xlarge">
+           	 <input id="searchTextField" class="search" size = "50" type="text" placeholder="Find a city" value = ""/>
+           	 <i class="fa fa-search"></i>
+        </div>
+        
+        <h3>Categories</h3>
+
+        <ul>
+                            <li><input id = "checkbox" type="checkbox" value="restaurants">
+				    Restaurants</li>
+				    		<li><input id = "checkbox" type="checkbox" value="airports">
+				    Airport</li>
+				    		<li><input id = "checkbox" type="checkbox" value="stores">
+				    Stores</li>
+				    		<li><input id = "checkbox" type="checkbox" value="bars">
+				    Bars</li>
+				    		<li><input id = "checkbox" type="checkbox" value="cafes">
+				    Cafes</li>
+				    		<li><input id = "checkbox" type="checkbox" value="museums">
+				    Museums</li>
+
+        </ul>
+        <button id = "getResults" class = "btn btn-primary btnsubmit" type = "submit">Click Here</button>
+        <div class = "placeDetails"></div>
+        </div>
+
+    </div>
+        
+    </div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script src = "./js/function.js"></script>
+ </body>
+</html>
